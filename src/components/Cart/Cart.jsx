@@ -18,12 +18,12 @@ const Cart = (props) => {
 
     return (
         <div className='cart'>
-             <h4>order summery</h4>
+             <h2>Order Summery</h2>
                 <p>Selected Items : {cart.length}</p>
                 <p> Total Price : $ {total}</p>
                 <p>  Shipping Cost : $ {shipping}</p>
                 <p> Tax : $ {tax}</p>
-                <h3> Grand Total :$ {GrandTotal}</h3>
+                <h4> Grand Total :$ {GrandTotal}</h4>
         </div>
     );
 };
