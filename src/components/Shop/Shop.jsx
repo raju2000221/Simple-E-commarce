@@ -27,7 +27,7 @@ const Shop = () => {
             if(saveProduct){
                 const quantity = storedCart[id];
                 saveProduct.quantity =quantity;
-                s4 : add the added product to the saved cart
+                // s4 : add the added product to the saved cart
                 saveCart.push(saveProduct)
             }
             

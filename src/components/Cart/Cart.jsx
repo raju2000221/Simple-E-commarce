@@ -6,9 +6,12 @@ const Cart = (props) => {
     let total =0;
     let shipping =0;
     let GrandTotal = 0
+    let quantity =0;
     for(const product of cart){
-        total = total + product.price;
+        product.quantity =product.quantity || 1;
+        total = total + product.price * product.quantity;
         shipping = shipping + product.shipping;
+        quantity = quantity + product.quantity
         
 
          
@@ -19,7 +22,7 @@ const Cart = (props) => {
     return (
         <div className='cart'>
              <h2>Order Summery</h2>
-                <p>Selected Items : {cart.length}</p>
+                <p>Selected Items : {quantity}</p>
                 <p> Total Price : $ {total}</p>
                 <p>  Shipping Cost : $ {shipping}</p>
                 <p> Tax : $ {tax}</p>
