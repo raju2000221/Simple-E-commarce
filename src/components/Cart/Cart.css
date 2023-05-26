@@ -15,3 +15,11 @@
 .cart p{
     font-size: 17px;
 }
+
+
+.clearCart{
+    width: 220px;
+    margin: 10px auto;
+   
+    background-color: rgb(230, 49, 17);
+}
